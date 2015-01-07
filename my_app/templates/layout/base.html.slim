@@ -1,0 +1,23 @@
+%doctype 5
+html
+  head
+    title APP TITLE
+    - assets "css"
+      |<link rel="stylesheet" href="{{ ASSET_URL }}">
+  body
+    .container
+      .row
+        .col-md-10.col-md-offset-1
+          .navbar
+            .navbar-inner
+              .container
+                ul.nav
+                  li List item 1
+                  li List item 2
+                  li List item 3
+      .row
+        .col-md-10.col-md-offset-1
+          - block content
+            |stuff
+    - assets "js"
+      |<script src="{{ ASSET_URL }}"></script>

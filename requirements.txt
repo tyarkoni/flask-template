@@ -1,0 +1,4 @@
+Flask
+Flask-Assets
+SQLAlchemy
+slimish-jinja
